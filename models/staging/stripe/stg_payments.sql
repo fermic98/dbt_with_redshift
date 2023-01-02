@@ -4,6 +4,6 @@ select
     paymentmethod as payment_method,
     status,
     amount/100 as amount,
-    created as created_at,
+    created as created_at
 
 from {{ source('stripe','payment') }}
