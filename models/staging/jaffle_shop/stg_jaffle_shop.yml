@@ -31,3 +31,10 @@ models:
               - relationships: 
                   to: ref('stg_customers')   
                   field: customer_id
+  - name: stg_orders
+    columns:
+      - name: order_id
+        description: primary key constraints
+        tests:
+          - unique
+          - not_null
